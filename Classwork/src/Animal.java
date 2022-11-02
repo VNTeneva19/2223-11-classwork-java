@@ -10,6 +10,16 @@ public class Animal {
         this.age = 10;
     }
 
+    public Animal(int age)
+    {
+        this ("Random", age);
+    }
+
+    public static void test()
+    {
+        System.out.println("We are in the static method");
+    }
+
     public Animal(String breed, int age)
     {
         this.breed = breed;
@@ -29,12 +39,17 @@ public class Animal {
 
     public int getAge()
     {
-        return age;
+        if (4 < 3) {
+            return this.age;
+        }
+        return 0;
     }
 
     public void setAge(int age)
     {
-        this.age = age;
+        if (age > this.age){
+            this.age = age;
+        }
     }
 
     public static void testing()
@@ -47,3 +62,4 @@ public class Animal {
         return "The breed is: " + this.getBreed() + " and its age is: " + this.getAge();
     }
 }
+
