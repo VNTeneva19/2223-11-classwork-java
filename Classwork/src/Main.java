@@ -1,24 +1,16 @@
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Animal dog = new Animal(10);
-        dog.setAge(5);
-        System.out.println(dog.getAge());
+        Cat cat = new Cat();
+        Dog dog = new Dog(10, 12.5, "German Sheppard");
 
-        Animal cat = new Animal(10);
+        List<Animal> animals = new ArrayList<>();
 
-        System.out.println(dog);
-        Animal test = cat;
+        animals.add(cat);
+        animals.add(dog);
 
-        System.out.println(test.equals(cat));
-        System.out.println(dog.hashCode());
-        System.out.println(cat.hashCode());
-        System.out.println(test.hashCode());
-
-        Integer miniInt = 10;
-        int n = Integer.parseInt("1");
-
-
+        cat.test();
     }
 }
