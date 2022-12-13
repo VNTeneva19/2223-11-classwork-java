@@ -1,24 +1,13 @@
 public class Dog extends Mammal {
-    public String breed;
-
-    public Dog(int age, double weight, String breed) {
-        super(age, weight);
-        this.breed = breed;
-    }
-
     @Override
-    public String toString()
+    public void walk()
     {
-        return this.breed + " " + super.age + " " + super.weight;
+        System.out.println("Dog is walking");
     }
 
     @Override
-    public void walk() {
-
-    }
-
-    @Override
-    public void test() {
-
+    public void test(String text)
+    {
+        System.out.println("Testing in Dog");
     }
 }

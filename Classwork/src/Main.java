@@ -3,14 +3,21 @@ import java.util.List;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Dog dog = new Dog(10, 12.5, "German Sheppard");
+        Person person = new Person("Gosho");
+        Mammal person2 = new Person("Tosho");
+        Animal person3 = new Person("Ivan");
 
-        List<Animal> animals = new ArrayList<>();
+        System.out.println("Person: ");
+        System.out.println(person.getName());
+        person.eat();
+        person.walk();
+        person.test("Person");
 
-        animals.add(cat);
-        animals.add(dog);
+        System.out.println("Mammal: ");
+        person2.walk();
+        person2.test("Mammal");
 
-        cat.test();
+        System.out.println("Animal: ");
+        person3.eat();
     }
 }

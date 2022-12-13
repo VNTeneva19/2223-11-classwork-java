@@ -1,4 +1,4 @@
-public interface Animal extends TestInterface {
+public interface Animal{
     void eat();
 
 }
